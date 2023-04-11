@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_hero_hero_infos",
+  "info": {
+    "displayName": "Hero Info"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

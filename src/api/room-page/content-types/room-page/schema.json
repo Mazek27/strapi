@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "room_pages",
+  "info": {
+    "singularName": "room-page",
+    "pluralName": "room-pages",
+    "displayName": "Room Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hero.hero",
+      "required": true
+    },
+    "room_id": {
+      "type": "string",
+      "required": true
+    },
+    "place_id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_hero_heroes",
+  "info": {
+    "displayName": "Hero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "brochureInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hero.brochure-info"
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hero.hero-info"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

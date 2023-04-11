@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_about_uses",
+  "info": {
+    "singularName": "page-about-us",
+    "pluralName": "page-about-uses",
+    "displayName": "Page AboutUs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_id": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

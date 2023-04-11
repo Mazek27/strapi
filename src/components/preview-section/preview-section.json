@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_preview_section_preview_sections",
+  "info": {
+    "displayName": "Preview Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "previewButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "preview-section.preview-button"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_hero_brochure_infos",
+  "info": {
+    "displayName": "Brochure Info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

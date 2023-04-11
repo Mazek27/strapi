@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_card_description_card_descriptions",
+  "info": {
+    "displayName": "Card Description"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

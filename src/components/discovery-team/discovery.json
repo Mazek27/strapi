@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_discovery_discoveries",
+  "info": {
+    "displayName": "Discovery Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "members": {
+      "type": "component",
+      "repeatable": true,
+      "component": "discovery-team.member"
+    }
+  }
+}
