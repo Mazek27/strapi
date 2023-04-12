@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_features_feature_title_items",
+  "info": {
+    "displayName": "FeatureTitleItem"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}
