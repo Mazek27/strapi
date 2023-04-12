@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footer_commons",
+  "info": {
+    "singularName": "footer-common",
+    "pluralName": "footer-commons",
+    "displayName": "FooterCommon",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.contact-us"
+    },
+    "socialMediaLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.social-links"
+    },
+    "privacyPolicyLink": {
+      "type": "string"
+    },
+    "technicalProblemsLink": {
+      "type": "string"
+    }
+  }
+}

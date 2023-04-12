@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_sections_meetings",
+  "info": {
+    "displayName": "Meetings",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "redirectUri": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.article-item"
+    }
+  }
+}

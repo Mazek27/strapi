@@ -10,8 +10,8 @@ export default {
     },
     {
       method: 'GET',
-      path: '/room-pages/findByPlaceAndRoomId',
-      handler: 'room-page.findOneByPlaceAndRoomId',
+      path: '/room-pages/:id',
+      handler: 'room-page.findOne',
       config: {
         policies: [],
       },

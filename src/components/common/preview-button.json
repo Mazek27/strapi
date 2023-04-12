@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_common_preview_buttons",
+  "info": {
+    "displayName": "PreviewButton"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

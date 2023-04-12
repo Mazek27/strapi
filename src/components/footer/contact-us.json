@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_footer_contactuses",
+  "info": {
+    "displayName": "ContactUs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "places": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.place"
+    }
+  }
+}

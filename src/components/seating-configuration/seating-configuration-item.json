@@ -1,23 +1,22 @@
 {
   "collectionName": "components_seating_configuration_seating_configuration_items",
   "info": {
-    "displayName": "SeatingConfigurationItem"
+    "displayName": "SeatingConfigurationItem",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "size": {
-      "type": "string",
-      "required": true
-    },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": false
     }
   }
 }

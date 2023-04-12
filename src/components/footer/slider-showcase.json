@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_footer_slider_showcases",
+  "info": {
+    "displayName": "sliderShowcase"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "redirectPath": {
+      "type": "string"
+    }
+  }
+}

@@ -1,6 +1,8 @@
-const { sanitize } = require('@strapi/utils');
+import {factories} from "@strapi/strapi";
 
-module.exports = {
+const {sanitize} = require('@strapi/utils');
+
+export default factories.createCoreController('api::room-page.room-page', ({strapi}) => ({
   find: async (ctx) => {
     let entities;
     if (ctx.query._q) {
@@ -9,32 +11,34 @@ module.exports = {
       entities = await strapi.entityService.findMany('api::room-page.room-page', ctx.query);
     }
 
-    const model = strapi.getModel('room-page');
-    return entities.map((entity) => sanitize(entity, { model }));
+    console.log()
+
+    return  await Promise.all(entities.map(async (entity) => {
+      return {data: entity}
+    }))
   },
 
-  findOneByPlaceAndRoomId: async (ctx) => {
-    const { place_id, room_id } = ctx.query;
+  findOne: async (ctx) => {
+    const {id: place_id} = ctx.params;
+    const {room_id} = ctx.query;
 
     if (!place_id || !room_id) {
       return ctx.badRequest('Both place_id and room_id must be provided.');
     }
 
-    console.log({ place_id, room_id })
-
-    const entity = await strapi.entityService.findOne('api::room-page.room-page',1, {
-      where: [
-        { place_id: place_id },
-        { room_id: room_id },
-      ],
+    const entity = await strapi.entityService.findMany('api::room-page.room-page', {
+      where: {
+        place_id,
+        room_id
+      },
       populate: 'deep'
     });
 
-    if (!entity) {
+    if (entity.length === 0) {
       return ctx.notFound('No room page found with the given place_id and room_id.');
     }
 
-    const sanitizedEntity = await sanitize.contentAPI.output(entity);
-    return { data: sanitizedEntity }
+    const sanitizedEntity = await sanitize.contentAPI.output(entity[0]);
+    return {data: sanitizedEntity}
   },
-};
+}));
