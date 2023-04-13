@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_common_icons",
+  "info": {
+    "displayName": "Icon"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "video",
+        "connectivity",
+        "audio",
+        "control-system",
+        "wifi",
+        "tv",
+        "video-projector",
+        "roller-shades",
+        "desk",
+        "music",
+        "document",
+        "audio-recording",
+        "video-switcher",
+        "monitor",
+        "laptop"
+      ]
+    }
+  }
+}

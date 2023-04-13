@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_common_suite_items",
+  "info": {
+    "displayName": "SuiteItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "equipments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.icon"
+    }
+  }
+}

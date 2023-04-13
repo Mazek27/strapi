@@ -22,12 +22,14 @@ export default factories.createCoreController('api::room-page.room-page', ({stra
     const {id: place_id} = ctx.params;
     const {room_id} = ctx.query;
 
+    console.log({place_id, room_id})
+
     if (!place_id || !room_id) {
       return ctx.badRequest('Both place_id and room_id must be provided.');
     }
 
     const entity = await strapi.entityService.findMany('api::room-page.room-page', {
-      where: {
+      filters: {
         place_id,
         room_id
       },

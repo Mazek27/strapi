@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_event_rooms",
+  "info": {
+    "displayName": "EventRooms",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rooms": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.suite-item"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+
+  }
+}

@@ -15,6 +15,9 @@
     },
     "Description": {
       "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
