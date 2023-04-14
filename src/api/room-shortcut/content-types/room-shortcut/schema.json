@@ -1,14 +1,19 @@
 {
-  "collectionName": "components_common_suite_items",
+  "kind": "collectionType",
+  "collectionName": "room_shortcuts",
   "info": {
-    "displayName": "SuiteItem",
+    "singularName": "room-shortcut",
+    "pluralName": "room-shortcuts",
+    "displayName": "RoomShortcut",
     "description": ""
   },
-  "options": {},
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "description": {
       "type": "richtext"
@@ -16,7 +21,7 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",

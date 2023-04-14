@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_slider_with_descriptions",
+  "info": {
+    "displayName": "SliderWithDescription",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

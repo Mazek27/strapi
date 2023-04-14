@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "meetings_pages",
+  "collectionName": "celebrations_pages",
   "info": {
-    "singularName": "meetings-page",
-    "pluralName": "meetings-pages",
-    "displayName": "MeetingsPage",
+    "singularName": "celebrations-page",
+    "pluralName": "celebrations-pages",
+    "displayName": "CelebrationsPage",
     "description": ""
   },
   "options": {
@@ -18,7 +18,13 @@
       "component": "hero.hero"
     },
     "place_id": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "grandCelebrates": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.slider-with-description"
     },
     "featureAndAmenities": {
       "type": "component",
@@ -30,10 +36,10 @@
       "repeatable": false,
       "component": "event-categories.event-categories"
     },
-    "eventRooms": {
+    "popularSuites": {
       "type": "component",
       "repeatable": false,
-      "component": "sections.event-room"
+      "component": "sections.popular-suites"
     }
   }
 }

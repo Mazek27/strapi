@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_icon_list_sections",
+  "info": {
+    "displayName": "IconListSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "displayName": "FeatureTechnologyItem",
+      "type": "component",
+      "repeatable": true,
+      "component": "features.feature-technology-item",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_features_feature_technology_items",
+  "info": {
+    "displayName": "FeatureTechnologyItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "video",
+        "connectivity",
+        "audio",
+        "control-system",
+        "wifi",
+        "tv",
+        "video-projector",
+        "roller-shades",
+        "desk",
+        "music",
+        "document",
+        "audio-recording",
+        "video-switcher",
+        "monitor",
+        "laptop"
+      ],
+      "required": true
+    }
+  }
+}
