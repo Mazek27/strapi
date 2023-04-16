@@ -1,0 +1,63 @@
+trigger: none
+pr: none
+
+variables:
+  Location: EastUS
+  ResourceGroupName: rg-are-website-strapi
+  AppServiceName: are-website-strapi
+
+stages:
+  - stage: create_strapi
+    displayName: Create Strapi resources
+    dependsOn: []
+    jobs:
+      - job: create_strapi
+        steps:
+          - task: AzureCLI@2
+            displayName: Deploy resource group template
+            inputs:
+              azureSubscription: $(AzureSubscription)
+              scriptType: pscore
+              scriptLocation: inlineScript
+              inlineScript: |
+                $parameterFile = Join-Path -Path "$(Agent.TempDirectory)" -ChildPath "resource-group.parameters.json"
+                $parameters = @{
+                    resourceGroupName = @{ value = '$(ResourceGroupName)' }
+                }
+                @{parameters = $parameters } | ConvertTo-Json -Depth 10 | Out-File -FilePath $parameterFile -Encoding utf8 -Force
+                $deploymentName = "$(ResourceGroupName)-$(AppServiceName)"
+                $deploymentName = $deploymentName.Substring(0, [System.Math]::Min(64, $deploymentName.Length))
+                az deployment sub create `
+                    --location '$(Location)' `
+                    --name $deploymentName `
+                    --template-file 'resource-group.bicep' `
+                    --parameters @$parameterFile
+              failOnStandardError: true
+              workingDirectory: $(Build.SourcesDirectory)/azure-pipelines/bicep-templates
+
+          - task: AzureCLI@2
+            displayName: Deploy resources template
+            inputs:
+              azureSubscription: $(AzureSubscription)
+              scriptType: pscore
+              scriptLocation: inlineScript
+              inlineScript: |
+                $name = az webapp list --resource-group $(ResourceGroupName) --query "[?(name == '$(AppServiceName)')].name" --out tsv
+                if ([string]::IsNullOrWhiteSpace($name)) {
+                    $appServiceNewOrExisting = 'new'
+                } else {
+                    $appServiceNewOrExisting = 'existing'
+                }
+                $parameterFile = Join-Path -Path "$(Agent.TempDirectory)" -ChildPath "resources.parameters.json"
+                $parameters = @{
+                    appServiceNewOrExisting = @{ value = $appServiceNewOrExisting }
+                    appServiceName          = @{ value = '$(AppServiceName)' }
+                }
+                @{parameters = $parameters } | ConvertTo-Json -Depth 10 | Out-File -FilePath $parameterFile -Encoding utf8 -Force
+                az deployment group create `
+                    --resource-group '$(ResourceGroupName)' `
+                    --name 'strapi' `
+                    --template-file 'resources.bicep' `
+                    --parameters @$parameterFile
+              failOnStandardError: true
+              workingDirectory: $(Build.SourcesDirectory)/azure-pipelines/bicep-templates
