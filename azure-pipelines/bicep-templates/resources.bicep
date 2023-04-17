@@ -30,7 +30,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2018-02-01' = {
     reserved: true
   }
   sku: {
-    name: 'B1'
+    name: 'S1'
     capacity: 1
   }
   tags: tags
@@ -80,7 +80,7 @@ resource uploadsContainer 'Microsoft.Storage/storageAccounts/blobServices/contai
   }
 }
 
-resource appService 'Microsoft.Web/sites@2021-03-01' = if (appServiceNewOrExisting == 'new') {
+resource appService 'Microsoft.Web/sites@2021-03-01' = if (appServiceNewOrExisting == '_new_') {
   name: appServiceName
   location: location
   kind: 'app,linux'

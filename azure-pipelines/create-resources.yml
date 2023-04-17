@@ -2,7 +2,7 @@ trigger: none
 pr: none
 
 variables:
-  AzureSubscription: ARE-DevOps-Pipelines
+  AzureSubscription: ARE-Qodeca-Production-Pipelines
   Location: EastUS
   ResourceGroupName: rg-are-website-strapi
   AppServiceName: are-website-strapi
