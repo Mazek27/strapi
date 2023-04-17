@@ -2,16 +2,16 @@ export default {
   routes: [
     {
       method: 'GET',
-      path: '/tech-page',
-      handler: 'tech-page.find',
+      path: '/gallery-page',
+      handler: 'gallery-page.find',
       config: {
         policies: [],
       },
     },
     {
       method: 'GET',
-      path: '/tech-page/:id',
-      handler: 'tech-page.findOne',
+      path: '/gallery-page/:id',
+      handler: 'gallery-page.findOne',
       config: {
         policies: [],
       },

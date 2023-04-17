@@ -26,7 +26,9 @@
         "audio-recording",
         "video-switcher",
         "monitor",
-        "laptop"
+        "laptop",
+        "phone-dark",
+        "clock"
       ],
       "required": true
     }

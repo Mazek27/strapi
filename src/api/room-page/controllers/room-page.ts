@@ -11,8 +11,6 @@ export default factories.createCoreController('api::room-page.room-page', ({stra
       entities = await strapi.entityService.findMany('api::room-page.room-page', ctx.query);
     }
 
-    console.log()
-
     return  await Promise.all(entities.map(async (entity) => {
       return {data: entity}
     }))

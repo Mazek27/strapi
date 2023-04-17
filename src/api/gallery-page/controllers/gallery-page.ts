@@ -1,14 +1,14 @@
 /**
- * tech-page controller
+ * gallery-page controller
  */
 
 import { factories } from '@strapi/strapi'
 
-export default factories.createCoreController('api::tech-page.tech-page', ({ strapi }) =>  ({
+export default factories.createCoreController('api::gallery-page.gallery-page', ({ strapi }) =>  ({
   async findOne(ctx) {
     const { id: place_id } = ctx.params;
 
-    const entity = await strapi.entityService.findMany('api::tech-page.tech-page', {
+    const entity = await strapi.entityService.findMany('api::gallery-page.gallery-page', {
       filters: {
         place_id
       },
