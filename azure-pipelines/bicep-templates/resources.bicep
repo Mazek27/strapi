@@ -80,7 +80,7 @@ resource uploadsContainer 'Microsoft.Storage/storageAccounts/blobServices/contai
   }
 }
 
-resource appService 'Microsoft.Web/sites@2021-03-01' = if (appServiceNewOrExisting == '_new_') {
+resource appService 'Microsoft.Web/sites@2021-03-01' = if (appServiceNewOrExisting == 'new') {
   name: appServiceName
   location: location
   kind: 'app,linux'
