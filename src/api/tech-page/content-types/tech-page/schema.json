@@ -18,12 +18,6 @@
       "component": "hero.hero",
       "required": true
     },
-    "gallery": {
-      "type": "component",
-      "repeatable": false,
-      "component": "gallery.gallery",
-      "required": true
-    },
     "features": {
       "displayName": "IconListSection",
       "type": "component",
@@ -45,6 +39,11 @@
     "place_id": {
       "type": "string",
       "required": true
+    },
+    "simpleGallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.gallery-section"
     }
   }
 }

@@ -22,11 +22,6 @@
       "repeatable": false,
       "component": "hero.hero"
     },
-    "gallery": {
-      "type": "component",
-      "repeatable": false,
-      "component": "gallery.gallery"
-    },
     "discoverTeam": {
       "type": "component",
       "repeatable": false,
@@ -38,6 +33,11 @@
       "repeatable": false,
       "component": "faq.faq",
       "required": true
+    },
+    "simpleGallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.gallery-section"
     }
   }
 }

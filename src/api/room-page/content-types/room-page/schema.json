@@ -37,17 +37,16 @@
       "component": "features.features",
       "required": false
     },
-    "gallery": {
-      "type": "component",
-      "repeatable": false,
-      "component": "gallery.gallery",
-      "required": true
-    },
     "eventCategories": {
       "type": "component",
       "repeatable": false,
       "component": "event-categories.event-categories",
       "required": true
+    },
+    "simpleGallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.gallery-section"
     }
   }
 }
