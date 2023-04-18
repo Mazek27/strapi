@@ -27,6 +27,9 @@
       "repeatable": false,
       "component": "preview-section.preview-section",
       "required": true
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

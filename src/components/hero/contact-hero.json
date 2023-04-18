@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_hero_contact_heroes",
+  "info": {
+    "displayName": "ContactHero"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hero.hero-info",
+      "required": true
+    },
+    "address": {
+      "displayName": "Address",
+      "type": "component",
+      "repeatable": false,
+      "component": "hero.address"
+    }
+  }
+}
