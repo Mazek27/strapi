@@ -19,10 +19,6 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-- task: DeleteFiles@1
-  inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)'
-    Contents: 'node_modules'
 
 - task: AzureWebApp@1
   inputs:
