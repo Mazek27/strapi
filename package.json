@@ -5,7 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "node node_modules/@strapi/strapi/bin/strapi.js start",
     "build": "strapi build",
     "strapi": "strapi"
   },
@@ -16,7 +16,6 @@
     "@strapi/utils": "4.9.0",
     "qs": "6.11.1",
     "@strapi/strapi": "4.9.0",
-    "strapi": "3.6.11",
     "better-sqlite3": "8.0.1",
     "strapi-plugin-populate-deep": "2.0.0"
   },
