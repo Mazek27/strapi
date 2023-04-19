@@ -43,12 +43,6 @@ variables:
       EnvironmentName: ${{ parameters.EnvironmentName }}
 
 steps:
-  - template: steps/variables-initialize-webapp.yml@shared
-    parameters:
-      ResourceGroupBaseName: $(VariableGroupName)
-      AppName: $(AppName)
-      ShortAppName: $(ShortAppName)
-      WebAppCustomDomain: $(WebAppCustomDomain)
 
   - task: AzureCLI@2
     displayName: Add Environment Variables to .env file
