@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sections_formatted_text_sections",
+  "info": {
+    "displayName": "FormattedTextSection"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}
