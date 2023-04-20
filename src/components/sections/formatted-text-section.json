@@ -1,12 +1,23 @@
 {
   "collectionName": "components_sections_formatted_text_sections",
   "info": {
-    "displayName": "FormattedTextSection"
+    "displayName": "FormattedTextSection",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "text": {
       "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
