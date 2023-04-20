@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_seating_configuration_seating_configurations",
+  "info": {
+    "displayName": "SeatingConfiguration",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "configurations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seating-configuration.seating-configuration-item"
+    }
+  }
+}

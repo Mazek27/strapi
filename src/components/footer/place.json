@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_footer_places",
+  "info": {
+    "displayName": "Place",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.address"
+    },
+    "person": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.person"
+    }
+  }
+}

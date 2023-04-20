@@ -13,7 +13,7 @@
       "type": "richtext",
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "richtext"
     }
   }

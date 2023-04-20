@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meetings_pages",
+  "info": {
+    "singularName": "meetings-page",
+    "pluralName": "meetings-pages",
+    "displayName": "MeetingsPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hero.hero"
+    },
+    "place_id": {
+      "type": "string"
+    },
+    "featureAndAmenities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "features.features"
+    },
+    "eventCategories": {
+      "type": "component",
+      "repeatable": false,
+      "component": "event-categories.event-categories"
+    },
+    "eventRooms": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.event-room"
+    }
+  }
+}

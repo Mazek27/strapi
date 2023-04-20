@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_features_feature_title_items",
+  "info": {
+    "displayName": "FeatureTitleItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "video",
+        "connectivity",
+        "audio",
+        "control-system"
+      ],
+      "required": false
+    }
+  }
+}

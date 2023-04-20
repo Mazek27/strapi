@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_event_categories_event_category_items",
+  "info": {
+    "displayName": "Event Category Item"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

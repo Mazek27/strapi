@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "footer_common": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::footer-common.footer-common"
+    },
+    "sliderShowcase": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.slider-showcase"
+    },
+    "page_id": {
+      "type": "string"
+    }
+  }
+}

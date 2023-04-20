@@ -4,7 +4,8 @@
   "info": {
     "singularName": "room-page",
     "pluralName": "room-pages",
-    "displayName": "Room Page"
+    "displayName": "Room Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +24,29 @@
     },
     "place_id": {
       "type": "string"
+    },
+    "seatingConfiguration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seating-configuration.seating-configuration",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": false,
+      "component": "features.features",
+      "required": false
+    },
+    "eventCategories": {
+      "type": "component",
+      "repeatable": false,
+      "component": "event-categories.event-categories",
+      "required": true
+    },
+    "simpleGallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.gallery-section"
     }
   }
 }

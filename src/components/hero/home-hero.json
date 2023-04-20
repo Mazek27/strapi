@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_hero_home_heroes",
+  "info": {
+    "displayName": "HomeHero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "locations": {
+      "displayName": "locations",
+      "type": "component",
+      "repeatable": true,
+      "component": "hero.locations",
+      "required": true
+    }
+  }
+}

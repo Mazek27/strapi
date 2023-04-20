@@ -1,7 +1,20 @@
-/**
- * room-page router
- */
-
-import { factories } from '@strapi/strapi';
-
-export default factories.createCoreRouter('api::room-page.room-page');
+export default {
+  routes: [
+    {
+      method: 'GET',
+      path: '/room-pages',
+      handler: 'room-page.find',
+      config: {
+        policies: [],
+      },
+    },
+    {
+      method: 'GET',
+      path: '/room-pages/:id',
+      handler: 'room-page.findOne',
+      config: {
+        policies: [],
+      },
+    }
+  ]
+}

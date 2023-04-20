@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_features_feature_list_items",
+  "info": {
+    "displayName": "FeatureListItem"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

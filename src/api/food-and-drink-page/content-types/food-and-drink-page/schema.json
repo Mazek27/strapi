@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_and_drink_pages",
+  "info": {
+    "singularName": "food-and-drink-page",
+    "pluralName": "food-and-drink-pages",
+    "displayName": "FoodAndDrinkPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hero.hero"
+    },
+    "sliderFoodAndDrink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.slider-with-description"
+    },
+    "place_id": {
+      "type": "string"
+    }
+  }
+}

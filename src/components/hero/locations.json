@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_hero_locations",
+  "info": {
+    "displayName": "locations"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "redirectPath": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

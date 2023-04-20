@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tech_pages",
+  "info": {
+    "singularName": "tech-page",
+    "pluralName": "tech-pages",
+    "displayName": "TechPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hero.hero",
+      "required": true
+    },
+    "features": {
+      "displayName": "IconListSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.icon-list-section"
+    },
+    "technologyMenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "features.features",
+      "required": true
+    },
+    "eventCategories": {
+      "type": "component",
+      "repeatable": false,
+      "component": "event-categories.event-categories",
+      "required": true
+    },
+    "place_id": {
+      "type": "string",
+      "required": true
+    },
+    "simpleGallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.gallery-section"
+    }
+  }
+}
