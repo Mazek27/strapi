@@ -10,15 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '16.x'
-  displayName: 'Install Node.js'
-
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
 
 - task: AzureWebApp@1
   inputs:
@@ -27,4 +18,4 @@ steps:
     appName: 'are-website-strapi'
     package: '$(System.DefaultWorkingDirectory)'
     runtimeStack: 'NODE|16-lts'
-    startUpCommand: 'npm start'
+    startUpCommand: 'npm install && npm run build && npm start'
